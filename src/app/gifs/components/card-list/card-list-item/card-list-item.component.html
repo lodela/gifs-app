@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem">
+  <img class="card-img-top" [src]="place.image" alt="Card image cap" />
+  <div class="card-body">
+    <h5 class="card-title">{{ place.title }}</h5>
+    <p class="card-text">{{ place.description | limited100 }}</p>
+    <button class="btn btn-block btn-outline-primary w-100">
+      {{ place.button.text }}
+    </button>
+  </div>
+</div>
