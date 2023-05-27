@@ -1,10 +1,14 @@
-<div class="card" style="width: 18rem">
-  <img class="card-img-top" [src]="place.image" alt="Card image cap" />
-  <div class="card-body">
-    <h5 class="card-title">{{ place.title }}</h5>
-    <p class="card-text">{{ place.description | limited100 }}</p>
-    <button class="btn btn-block btn-outline-primary w-100">
-      {{ place.button.text }}
-    </button>
+<div class="row">
+  <div class="col-md-3 col-sm-6">
+    <div class="card mb-2 text-center bg-dark" style="width: 18rem">
+      <img class="card-img-top" [src]="place.image" alt="Card image cap" />
+      <div class="card-body text-white">
+        <h5 class="card-title">{{ place.title }}</h5>
+        <p class="card-text">{{ place.description | limited100 }}</p>
+        <button class="btn btn-block btn-outline-primary w-100 text-white">
+          {{ place.button.text }}
+        </button>
+      </div>
+    </div>
   </div>
 </div>
